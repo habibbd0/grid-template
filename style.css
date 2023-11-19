@@ -1,0 +1,37 @@
+.container{
+    width: 70%;
+    
+    margin: auto;
+    display: grid;
+    grid-template-columns:repeat(5,1fr) ;
+    grid-template-rows: 120px 220px 120px;
+    grid-template-areas:
+    "header header header header ads "
+    "nav article article article ads "
+    "nav footer footer footer footer"
+    ;
+    gap: 15px;
+    margin-top: 50px;
+}
+.grid .header{
+    background: gold;
+   grid-area: header;
+    
+}
+.grid .nav{
+    background: gold;
+    grid-area: nav;
+}
+.grid .article{
+    background: gold;
+   grid-area: article;
+ }
+.grid .ads{
+    background: gold;
+    grid-area: ads;
+    
+}
+.grid .footer{
+    background: gold;
+    grid-area: footer;
+}
